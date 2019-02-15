@@ -1,3 +1,3 @@
 # rxjs-serial-subscription
 
-This is a reimplementation of RxJS 4.x's SerialSubscription for RxJS 5.x.
+This is a reimplementation of RxJS 5.x's SerialSubscription for RxJS 6.x.
