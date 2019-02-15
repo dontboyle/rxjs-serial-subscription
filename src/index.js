@@ -1,4 +1,6 @@
-import { Subscription } from 'rxjs';
+import {
+	Subscription
+} from 'rxjs';
 
 /**
  * @export
@@ -20,19 +22,19 @@ export class SerializableSubscription extends Subscription {
 	}
 
 	/**
-   * Adds a tear down to be called during the unsubscribe() of this
-   * Subscription.
-   *
-   * If there's existing subscription, it'll be unsubscribed and
-   * removed.
-   *
-   * @param {TeardownLogic} teardown The additional logic to execute on
-   * teardown.
-   * @return {Subscription} Returns the Subscription used or created to be
-   * added to the inner subscriptions list. This Subscription can be used with
-   * `remove()` to remove the passed teardown logic from the inner subscriptions
-   * list.
-   */
+	 * Adds a tear down to be called during the unsubscribe() of this
+	 * Subscription.
+	 *
+	 * If there's existing subscription, it'll be unsubscribed and
+	 * removed.
+	 *
+	 * @param {TeardownLogic} teardown The additional logic to execute on
+	 * teardown.
+	 * @return {Subscription} Returns the Subscription used or created to be
+	 * added to the inner subscriptions list. This Subscription can be used with
+	 * `remove()` to remove the passed teardown logic from the inner subscriptions
+	 * list.
+	 */
 	serialize(teardown) {
 		if (this.closed) return;
 		if (typeof teardown === 'function') teardown = new Subscription(teardown);
