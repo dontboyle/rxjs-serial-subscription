@@ -7,3 +7,9 @@ npm: https://www.npmjs.com/package/rxjs-serializable-subscription
 npm install rxjs-serializable-subscription
 
 yarn add rxjs-serializable-subscription
+
+
+gitlab rxjs DEMO exmaples: https://gitlab.com/dontboyle/lunchandlearnrxjs
+
+usage found in "switch-map-in-flight-cancel" (link in top right)
+
