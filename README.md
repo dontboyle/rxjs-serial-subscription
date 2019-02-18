@@ -12,3 +12,9 @@ npm install rxjs-serializable-subscription
 yarn add rxjs-serializable-subscription
 
 StackBlitz Implementation: https://stackblitz.com/edit/typescript-dswrjc
+
+
+Quick note: I've noticed that the way this package is currently implemented, that it will NOT work with IE11. The reason for this is an error IE11 throws in regards to "classes" in js files. So the current workaround is to use this code within your project and have your webpack compile this code with the proper polyfills.
+
+Polyfills example in the wiki.
+
